@@ -105,7 +105,7 @@ print(''.join(blank_list))
 while update_display < 6:
   if blank_list == chosen_word:
     print("YOU WIN!")
-    print(f"The word was: {chosen_word}")
+    print(f"The word was:", "".join(chosen_word).capitalize())
     break
   guess = input("Make another guess! ")
   making_a_guess()
@@ -113,4 +113,4 @@ while update_display < 6:
   print(''.join(blank_list))
 if update_display == 6:
   print("GAME OVER.")
-  print(f"The word was: {chosen_word}")
+  print(f"The word was:", "".join(chosen_word).capitalize())
